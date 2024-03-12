@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <body>
+       
+        <div class="password-generator-container">
+      
+          <div class="password-display">
+            <input type="text" id="passwordOutput" readonly>
+            <button id="copyButton">copy</button>
+          </div>
+      
+          <div class="password-length">
+            <label for="lengthSlider">LENGTH:<span id="lengthValue">23</span></label>
+            <input type="range" id="lengthSlider" min="4" max="32" value="23">
+          </div>
+      
+          <div class="settings">
+            <h5>SETTINGS</h5>
+            <div class="setting">
+              <label for="includeUppercase">Include Uppercase</label>
+              <input type="checkbox" id="includeUppercase" checked>
+            </div>
+            <div class="setting">
+              <label for="includeLowercase">Include Lowercase</label>
+              <input type="checkbox" id="includeLowercase" checked>
+            </div>
+            <div class="setting">
+              <label for="includeNumbers">Include Numbers</label>
+              <input type="checkbox" id="includeNumbers" checked>
+            </div>
+            <div class="setting">
+              <label for="includeSymbols">Include Symbols</label>
+              <input type="checkbox" id="includeSymbols" checked>
+            </div>
+          </div>
+      
+          <button class="generate-button" id="generateButton">GENERATE</button>
+        </div>
+      
+        <!-- Link to your JavaScript file -->
+        <script src="./script.js"></script>
+      </body>
+      
+</body>
+</html>
